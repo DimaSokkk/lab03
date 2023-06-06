@@ -206,7 +206,7 @@ $ git push -u origin master
 
 ## Part 1
 
-1. Создадим CMakeLists.txt для formatter_lib:
+Создадим CMakeLists.txt для formatter_lib:
 ```sh
 cmake_minimum_required(VERSION 3.4)
 
@@ -232,7 +232,7 @@ $ cmake --build _build
 
 ## Part 2
 
-2.Создадим CMakeLists.txt для formatter_ex_lib:
+Создадим CMakeLists.txt для formatter_ex_lib:
 ```sh
 cmake_minimum_required(VERSION 3.4)
 
