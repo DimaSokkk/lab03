@@ -219,9 +219,13 @@ add_library(formatter STATIC formatter.cpp)
 target_include_directories(formatter PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 ```
 Команда cmake_minimum_required указывает подходящую минимальную версию Cmake
+
 Команды set(CMAKE_CXX_STANDARD 11), set(CMAKE_CXX_STANDARD_REQUIRED ON) устанавливают значения стандартных переменных в Cmake(в данном случае CMAKE_CXX_STANDARD и CMAKE_CXX_STANDARD_REQUIRED)
+
 Команда project(formatter) создает проект formatter, к которому можно подключать библиотеки, исполняемы файлы и т.д.
+
 Команда add_library(formatter STATIC formatter.cpp) создает статическую библиотеку из указываемых файлов
+
 Команда target_include_directories связывает библиотеку formatter и CMAKE_CURRENT_SOURCE_DIR
 
 Проверим, что сделали все правильно (сделаем сборку):
@@ -250,7 +254,9 @@ target_link_libraries(formatter_ex formatter)
 ```
 
 Команда add_subdirectory(../formatter_lib formatter) включает в сборку директорию с библиотекой formatter
+
 Команда target_link_libraries(formatter_ex formatter) связывает библиотеку formatter с formatter_ex
+
 Остальные команды аналогичны первому заданию
 
 Проверим, что сделали все правильно (сделаем сборку):
@@ -324,6 +330,7 @@ target_link_libraries(example formatter_ex)
 ```
 
 Команда add_executable(example hello_world.cpp) добавляет в проект исполняемые файлы
+
 Остальные команды включают в данный проект библиотеку formatter_ex и связывают его с нашим проектом example
 
 Проверим, что сделали все правильно (сделаем сборку):
