@@ -204,7 +204,7 @@ $ git remote add origin https://github.com/DimaSokkk/lab03.git
 $ git push -u origin master
 ```
 
-## Part 1 - Вам поручили перейти на систему автоматизированной сборки CMake. Исходные файлы находятся в директории formatter_lib. В этой директории находятся файлы для статической библиотеки formatter. Создайте CMakeList.txt в директории formatter_lib, с помощью которого можно будет собирать статическую библиотеку formatter.
+## Part 1
 
 1. Создадим CMakeLists.txt для formatter_lib:
 ```sh
@@ -230,7 +230,7 @@ $ cmake -H. -B_build
 $ cmake --build _build
 ```
 
-## Part 2 - У компании "Formatter Inc." есть перспективная библиотека, которая является расширением предыдущей библиотеки. Т.к. вы уже овладели навыком созданием CMakeList.txt для статической библиотеки formatter, ваш руководитель поручает заняться созданием CMakeList.txt для библиотеки formatter_ex, которая в свою очередь использует библиотеку formatter.
+## Part 2
 
 2.Создадим CMakeLists.txt для formatter_ex_lib:
 ```sh
@@ -259,7 +259,7 @@ $ cmake -H. -B_build
 $ cmake --build _build
 ```
 
-## Part 3 - Конечно же ваша компания предоставляет примеры использования своих библиотек. Чтобы продемонстрировать как работать с библиотекой formatter_ex, вам необходимо создать два CMakeList.txt для двух простых приложений.
+## Part 3
 
 Создадим CMakeLists.txt для solver_lib:
 ```sh
